@@ -12,8 +12,8 @@ fs.readdir('./resource/music', (eror,files)=>{
         let i=0;
         files.forEach(file => {
             let tExt = file.replace('.mp3', '.jpeg');
-            let songPath = `http://localhost/resource/music/${file}`; // URL path for song
-            let imgPath = `http://localhost/resource/img/${tExt}`; // URL path for image
+            let songPath = `https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/music/${file}`; // URL path for song
+            let imgPath = `https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/img/${tExt}`; // URL path for image
 
             music_data[i++] = {
                 title: file,
