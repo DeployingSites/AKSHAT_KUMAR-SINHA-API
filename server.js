@@ -8,7 +8,7 @@ const server = express();
 
 server.use(cors());
 server.use(express.json());
-server.use('/api/music-player/',music_router)
+server.use('/api/music-player',music_router)
 server.use('/api/music-player/resource/music', express.static(path.join(__dirname, 'resource/music')));
 server.use('/api/music-player/resource/img', express.static(path.join(__dirname, 'resource/img')));
 
