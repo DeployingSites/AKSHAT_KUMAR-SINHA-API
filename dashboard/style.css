@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+body{
+    color:white;
+    height:100vh;
+    width: 100vw;
+    background-color:black;
+    overflow: hidden;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+/* Service section */
+#services{
+    height: 100%;
+    width: 20%;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+}
+
+ul{
+    padding: 2rem 0;
+    list-style: none;
+}
+
+/* Usage section */
+#usage-section{
+    width: 60%;
+    height: 100%;
+    padding: 1rem 2rem;
+    background-color: #212121;
+    overflow-y: scroll;
+}
+
+/*  internal links section */
+
+#internalLinks{
+    height: 100%;
+    width: 20%;
+    padding: 1rem;
+}
+
+
+.container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#usage-section::-webkit-scrollbar{
+    display: none;
+}
+
+hr{
+    width: 100%;
+}
+
+p{
+    margin-top: 10px;
+}
+.code-block{
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+pre{
+    overflow-x: scroll;
+
+}

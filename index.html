@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKS API</title>
+    <link rel="stylesheet" href="/dashboard//style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+<body>
+    <main>
+        <aside id="services">
+            <h1>List</h1>
+
+            <ul>
+                <li><a href="#Music">Music</a></li>
+            </ul>
+        </aside>
+        <section id="usage-section">
+            <section id="Music" class="section-content">
+                <h1>Music</h1>
+                <hr>
+                <section class="container">
+                    <h4>Fetching</h4>
+                    <hr>
+                    <p>To fetch the list of music you need to use fetch</p>
+                    <h4 style="margin-top: 10px;">Code</h4>
+                    <pre class="code-block prettyprint" >
+                        <code class="prettyprint language-javascript">
+                            <b>
+    await fetch("https://akshat-kumar-sinha-api.onrender.com/api/music-player/getSongs")
+    .then((response)=> response.json()) 
+    .catch((e)=>console.log(e))
+                            </b>
+                        </code>
+                    </pre>
+                    <h4 style="margin-top: 10px;">Response</h4>
+                    <pre class="code-block " >
+                        <code class="prettyprint language-json">
+    {
+        "0": {
+            "title": "Arcade.mp3",
+            "song": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/music/Arcade.mp3",
+            "img": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/img/Arcade.jpeg"
+        },
+        "1": {
+            "title": "AtMyWorst.mp3",
+            "song": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/music/AtMyWorst.mp3",
+            "img": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/img/AtMyWorst.jpeg"
+        },
+        "2": {
+            "title": "DifferentWorld.mp3",
+            "song": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/music/DifferentWorld.mp3",
+            "img": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/img/DifferentWorld.jpeg"
+        },
+        "3": {
+            "title": "Doraemon.mp3",
+            "song": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/music/Doraemon.mp3",
+            "img": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/img/Doraemon.jpeg"
+        },
+        "4": {
+            "title": "Duniya.mp3",
+            "song": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/music/Duniya.mp3",
+            "img": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/img/Duniya.jpeg"
+        },
+        ...
+        ...
+        ...
+        ... 
+
+        "28": {
+            "title": "zalima.mp3",
+            "song": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/music/zalima.mp3",
+            "img": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/img/zalima.jpeg"
+        },
+        "29": {
+            "title": "zara sa.mp3",
+            "song": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/music/zara sa.mp3",
+            "img": "https://akshat-kumar-sinha-api.onrender.com/api/music-player/resource/img/zara sa.jpeg"
+        }
+    }
+                        </code>
+                    </pre>
+                
+                    
+                </section>
+            </section>
+        </section>
+        <aside id="internalLinks">
+            <h1>internal links</h1>
+        </aside>
+    </main>
+</body>
+</html>
